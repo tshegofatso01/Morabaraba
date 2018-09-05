@@ -12,16 +12,36 @@ Project page: https://github.com/MdumisenIND/Morabaraba
 
 Instructions for use (allowable actions): Morabaraba is traditional two-player strategy board game. 
 
-[The Board]
+Play consists of three stages:
+Stage 1:
 
-The board consists of three squares
+· Each player starts with 12 tokens called "cows".
+·Starting with a clear board, each player alternatively places one cow at a time on a junction (circle). The aim is to create rows of three, either vertically, diagonally, or horizontally. Cows may only be placed on unoccupied junctions.
+·When three-in-a-row is achieved, the player may remove (shoot) one of the opponent's cows. A player can not shoot an opponent's "three-in-a-row" cows if there are other cows on the board left to shoot.
+·Only one of the opponent's cows may be shot at a time, even if two (or more) lines of three-in-a-row are achieved with one move.
+·Once a cow is shot, it shall not be used in play again.
 
-[ Provide DETAILED  instructions on how to run AND interact with your program. If we cannot run it with relative ease, it will NOT be marked! So if it needs to be saved in a specific folder, or needs Internet access, or needs anything beyond simply double clicking the executable, document all that here. This is very IMPORTANT! Also, list all forms of interaction here, so if your program allows the user to press ‘Q’ to exit, or ‘left arrow’ or ‘right arrow’ to do specific things, document that here as well. If we cannot figure out how to interact with your program and nothing is documented, it will NOT be marked!]
+Stage 2 
 
-Tools used: [List and describe any .NET libraries or external tools that you imported for use in your project]
+·When all twelve cows of each player have been placed on the board, cows may be moved from one junction to another. A move consists of moving a cow from one junction to an unoccupied junction immediately linked and adjacent to that junction.
 
-Concepts used: [List ALL aspects of the CSc 102 curriculum that your project uses. So if your program uses Lists, Files, Recursion, Dictionaries, Custom classes, etc.; document them here and provide directions as to where those concepts are used in the code base. Please use the standard topics list on the Think Sharply with C# web page for the list of anticipated topics/concepts]
+·Players may break their own lines of three-in-a-row in order to make new lines, or simply reposition their cows.
+·Cows may be moved back and forth to the same two junctions repeatedly. A three-in-a-row may be made, broken and remade repeatedly.
+·Each time a three-in-a-row is remade, an opponent's cow shall be shot.
 
-Assumptions: [State ANY assumptions about how you expect the system will be used or run]
+stage 3
+·When a player has lost all but three cows, then a player may move a cow to any vacant junction on the board with each move.
+
+ 
+
+Winning the game
+·The game is won when the opponent cannot move any cows: or when the opponent has lost all but two cows.
+·When a player is down to three cows, and neither player is able to shoot an opponent's cow within ten moves, the game is a draw.
+
+Tools used: ThinkLib library
+
+Concepts used: Lists, custom classes, enums, strings. iterations.
+
+Assumptions: minimun screen resolution of 800x600
 
 Limitations: [State ANY limitations concerning what your program cannot do, though those functions may be implied by the nature of the project]
