@@ -40,7 +40,7 @@ Winning the game
 
 Tools used: ThinkLib library
 
-Concepts used: Lists, custom classes, enums, strings. iterations.
+Concepts used: Lists and arrays, custom classes and objects ( turtle to draw the board and other classes), enums, strings(and string methods). iterations(for loops and foreach loop),event handling, algorithm ( to move the cows around making sure every cow moves according to order, I/O files to write the instructions of the game.
 
 Assumptions: minimun screen resolution of 800x600
 
